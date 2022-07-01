@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="icons/travel.png"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/luutru.css">
+    <title>Thanks</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+#title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: red;
+}
+
+#container{
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.table{
+    margin: 0 auto;
+    line-height: 30px;
+    width: 80%;
+    text-align: left;
+}
+
+.table h1{
+    padding: 10px 20px;
+    background-color: rgb(167, 167, 167);
+    margin-top: 15px;
+    text-align: center;
+}
+.red{
+    color: red;
+    width: 500px;
+}
+.col-md{
+    background-color: black;
+    height:303px;
+    padding-top:100px;
+}
+img{
+    width:200px;
+    padding-left: 560px;
+}
+
+
+</style>
+<body>
+    <center><h1 style="font-family: 'SFU Syntax'; padding-bottom: 50px;"> We will contact with you as soon as possible.</h1></center>
+    <div id="container">
+        <table class="table">          
+            </th>
+            <tr>
+                <td>* Name: </td>
+                <td class="red" id="nguoigui"></td>
+            </tr>
+            <tr>
+                <td>* E-Mail: </td>
+                <td class="red" id="mail">fdfsdfd</td>
+            </tr>
+            <tr>
+                <td>* Phone:</td>
+                <td class="red" id="phone"></td>
+            </tr>
+
+        </table>    
+    </div>
+</br>
+</br>
+</br>
+   
+    <div class="col-md">
+        <center><p style="color:antiquewhite; font-size: 30px;font-family: 'SFU Syntax'">Thanks a lots</p></center>
+        <img src="./icons/travel1.png"/>
+        
+    </div>
+    <script>
+        document.getElementById("nguoigui").innerHTML = sessionStorage.getItem("nameng")
+        document.getElementById("mail").innerHTML = sessionStorage.getItem("mailng")
+        document.getElementById("phone").innerHTML = sessionStorage.getItem("phoneng")
+        sessionStorage.clear()
+        </script>
+</body>
+</html>
